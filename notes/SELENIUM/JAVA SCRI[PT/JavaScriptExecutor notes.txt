@@ -1,0 +1,27 @@
+JavaScript Executor : 
+			
+               JavaScriptExecutor is an Interface 
+
+		     It will allow us to execute JavaScript methods through Selenium webdriver.
+
+		     In some places selenium can't be work at that time we use JavaScript to interact that Webelement. 
+
+Syntax : 
+
+	JavaScriptExecutor js= (JavaScriptExecutor) driver; //Narrowing 
+
+	js.executeScript("arguments[0].scrollIntoView();", WebElementName)
+
+	js.executeScript("window.scrollBy(0,0);")
+eg : 
+
+    js.executeScript("window.scrollBy(0, 1000);")---> Scroll down 
+
+    js.executeScript("window.scrollBy(0, -3000);") ----> Scroll up
+
+    js.executeScript("arguments[0].click();", webelementname ) --->  click
+
+
+
+    
+ 1

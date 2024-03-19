@@ -1,0 +1,266 @@
+Collection :
+
+
+	   A Group Of Objects is called Collection.
+
+	   It is an Interface.
+
+	   It Supports Dissimiliar datatype.
+
+	   It Has Low Memory Wastage.
+
+	   It doesn't have any Fixed Length.   
+
+
+
+Types :
+
+List ( Interface )
+
+Set  ( Interface )
+
+Map ( Separated Interface )
+
+***********************************************************************************************
+
+List  : 
+
+	It is an Interface.
+
+	It is a index based.---->[0123...]
+
+	it does allow duplicate values.----->a,a
+
+  	It Prints in insertion order.---->122345....
+
+
+Syntax :
+
+		List <WrapperClass> refName = new (types of list) <WrapperClass>();
+
+		List ----> Interface
+		Types of List -----> Class
+		< > ----> Generics -----> For Type Safety.
+
+
+***********************************************************************************************
+	           *****************List Types :********************* 
+
+* ArrayList ( Class ) 								                                                                                                  				 Linked List :                
+
+Syntax :									
+       List <WrapperClass> refName = new ArrayList<WrapperClass> ();         	
+Def : 																	
+	       *ASynchronized. 								         
+	       *Thread is not  Safe....
+               *But fast Process
+
+************************************************************************************************				        
+* LinkedList ( Class )
+
+Syntax :-
+      List <WrapperClass> refName = new LinkedList<WrapperClass> ();
+Def :
+              *ASynchronized
+              *Thread is not  Safe.... 
+              *But fast Process
+
+****************************************************************************************
+VectorList :(Class)
+
+Syntax : 
+	List <WrapperClass> refName = new Vector<WrapperClass> ();
+	    
+Definition :
+	     *Synchronized
+	     *Thread Safe ... 
+             *But it is a slow process
+
+**********************************************************************************************************************************************************************
+
+List Methods :- 
+                  size()    get()      indexOf()   contains() 
+No Returntype:
+             add()  set()   remove()   clear()   addAll()  retainAll()  removeAll()  
+
+
+*************************************************************************************************************************************************************************
+Set ( Interface ) :
+
+		  It is A Interface.
+		
+		  It does not have any specific order.
+
+		  It does not allow Duplicate values.
+
+		  It is a value based.
+
+
+Syntax : -
+            Set <WrapperClass> refName = new TypesOfSet <WrapperClass> ();
+		  
+
+Types :- 
+
+         *HashSet (Class)                               
+
+         *LinkedHashSet(Class)
+
+         *TreeSet(Class)
+
+HashSet :(class) 
+     Syntax:-		
+          Set<Object> al = new HashSet<>();
+
+
+	It Prints in Random Order.
+	It will not allow Duplicate Values.
+	It will allow Single null value ..
+
+LinkedHashSet : 
+          Syntax:-		
+          Set<Object> a= new LinkedHashSet<>();
+
+
+	It Prints in Insertion Order.
+	It will not allow Duplicate Values.
+	It will allow Single null value . .
+
+TreeSet : 
+         Syntax:-		
+          Set<Object> a = new TreeSet<>();
+
+
+	It Prints in Ascending Order.
+	It will not allow Duplicate Values.
+	It will not allow even Single null value 
+
+set method():-
+
+add()   size()     contains() 
+ 
+No Return Type: 
+
+clear()   addAll()  retainAll()  removeAll()
+
+
+
+
+***************************************************************************************************************************************************************************
+
+Map [ Interface ]
+
+		It is A Key And Value Pair.
+		
+		Key + Value = One Entry
+
+		               Key ----> 
+
+			it will not allow duplicate it can be override.
+		
+			it will allow override null [ duplicate ]                                                                                          
+
+                		value ----->
+
+   			 The value will allow duplicate
+
+			 The value will allow the both null .
+
+
+             	Map ----- > ( Curly Bases ) { }
+
+Syntax : 
+
+	Map<Key,Value> refName = new TypesOfMap<Key,Value > ();
+	
+HashMap:-(class)
+    Syntax:-
+        Map<Integer,String> m = new HashMap<> ();
+
+          * Random order
+          * Key will allow the only one null
+          * value allow the duplicate null
+
+Linked HashMap:-(class)
+Syntax:-
+       	HashMap<Integer,String>hm = new LinkedHashMap<>();
+
+        *insertion order
+        *Key will allow the only one null
+        *value allow the duplicate null
+
+TreeMap:-(class)
+  Syntax:-
+        Map<Integer,String> hm = new TreeMap<>();
+
+        *ascending order(based on key)
+        *It will not allow Duplicate null(even single null).
+        *value allow the duplicate null
+
+Hashtable:-(class)
+Syntax:-
+	Hashtable<Integer,String> hm = new Hashtable<>();
+
+       * Ramdom order==>
+       * Both key and value are ignore the null
+
+
+***********************************************************************************************************************************************************
+
+Map Methods :
+put()  size()   get()  keySet()   values()   containsKey()   containsValue()  entrySet()  
+
+***********************************************************************************************************************************************************
+
+Iterator                                                                         List Iterator
+
+Used In Collection                                                       Used In List
+
+Traverse in a forward direction                                  Traverse in a backward and forward direction
+
+
+Iterator<> ref = listrefName.iterator()                         ListIterator<> ref = listrefName.listIterator()
+
+
+next()                                                                                next()
+
+
+					previous()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   
+
+
+
+
+
+
+
+
+
+
+
+
+

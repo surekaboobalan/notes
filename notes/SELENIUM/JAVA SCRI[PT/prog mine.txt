@@ -1,0 +1,49 @@
+package org.ggg;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Javascripts {
+public static void main(String[] args) throws InterruptedException, IOException {
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\hey\\eclipse-workspace\\Sselenium\\Driver\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.snapdeal.com/");
+	
+	//driver.manage().window().maximize();
+	
+
+JavascriptExecutor s=(JavascriptExecutor)driver;
+//s.executeScript("window.scrollBy(0,1000);");//scrolldown to 1000 position
+//Thread.sleep(4000);
+//s.executeScript("window.scrollBy(0,-500);");//scrollup
+//Thread.sleep(4000);
+//s.executeScript("window.scrollBy(100,1000);");//scroll horizontal
+//
+
+
+WebElement kids = driver.findElement(By.xpath("(//a[@class=\"underLineOnHover\"])[17]"));//elementt
+boolean enabled = kids.isEnabled();
+System.out.println(enabled);
+if (kids.isEnabled()==true) {
+	s.executeScript("arguments[0].scrollIntoView();",kids);//scroll to particular element
+	s.executeScript("arguments[0].click();",kids);//scroll to particular element & click
+	
+	TakesScreenshot t=(TakesScreenshot)driver;
+	File screenshotAs = t.getScreenshotAs(OutputType.FILE);
+	File screen=new File("./prtsc/.img1.png");
+	FileUtils.copyFile(screenshotAs, screen);
+}
+
+
+}
+
+}

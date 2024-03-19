@@ -1,0 +1,24 @@
+text short form
+=================
+short form===>//tag[.='full text']
+actual===>//tagname[text()='full text']
+=====================
+ANCESTOR
+===============
+//tagname[@attribute='atri value']/..=>parent
+actual xpath=>//tagname[@attribute='atri value']//parent::tagnam(tag name of parent must be mention)
+===========================
+from parent to child of child(finding grand children)
+=======================
+<button>
+  <span>
+    <mat-icon>
+    <\mat-i-con>
+ <\span>
+</button>
+         
+
+//button[@attributename='atr value']/span/mat_i_con
+//button[@attributename='atr value']//mat_i_con(this is the right way)
+
+example amazon===>//div[@cel_widget_id='MAIN-SEARCH_RESULTS-3']//button 

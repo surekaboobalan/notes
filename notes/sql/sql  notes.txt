@@ -1,0 +1,116 @@
+keywords
+join on
+
+create table user(id int ,name varchar(100));
+create table userage(id int , age int);
+insert into user(id,name) value(1,"abc");
+insert into user(id,name) value(2,"def");
+insert into user(id,name) value(3,"abc");
+insert into userage(id,age) value(1,25);
+insert into userage(id,age) value(2,29);
+SELECT * FROM ukg.user;
+select * from ukg.user join   ukg.userage on user.id=userage.id;
+select * from ukg.user join   ukg.userage on id=id;
+select * from ukg.user join   ukg.userage on user.id=userage.id where user.id=1;
+select userage.age from ukg.user join   ukg.userage on user.id=userage.id where user.id=1;
+UPDATE userage SET age = 18 WHERE id = 1;//updating 
+UPDATE user SET name = "" WHERE id = 1;//deleting a particular cell
+DELETE FROM user WHERE id=3;// deleting a row
+
+for updating/delete setting must be changed =>edit=>preference=>sqleditor =>disable the safe
+for deleting a full row delete keyword is used whereas for deleting particular cell update method is used(last before line)
+
+create database ukg;
+
+use ukg;
+create table ukg.students(namne varchar(100),section varchar(10),id int not null primary key auto_increment, ph long);
+ 
+select *from ukg.students ;
+insert into ukg.students(namne,section,ph) value("aaa","c",9876543210);
+insert into students(namne,section,ph) value("bb","c",9856543210);
+insert into students(namne,section,ph) value("cc","d",9876545210);
+
+select sum(id) as t from students;
+select count(section) from students;
+select avg(id) from students;
+select min(id) from students;
+select max(id) from students;
+select distinct section from students;
+select namne from students where id=3;
+select * from students where id=3;
+select namne from students where section <>"c";
+select ph from students where namne="aaa" && id=1;
+select *  from students where id=3 || section="c";
+select *  from students where not  section="c";
+select *  from students where   section in("c");
+select *  from students where id between  1 and 3;
+select  * from students group by  section;
+select section from students group by  section;
+select *  from students where id between 1 and 3;
+select *  from students limit 3;
+select *  from students limit 3 offset 2;
+--  select  from students having section="c";//err
+
+
+day 2 class:
+
+
+create database mysqltest;
+use mysqltest;
+create table user_table ( id int     not null    primary key    auto_increment, user_name varchar(100),email varchar(100)  );
+create table user_table ( id int     , user_name varchar(100),email varchar(100)  );
+SELECT * FROM mysqltest.user_table;
+insert into user_table (user_name,email)value("raj","raj@gmail.com");
+SELECT * FROM mysqltest.user_table;
+insert into user_table (user_name,email)value("ravi","ravi@gmail.com");
+SELECT * FROM mysqltest.user_table;
+SELECT user_name FROM mysqltest.user_table;
+SELECT * FROM mysqltest.user_table where id =2;
+SELECT user_name FROM mysqltest.user_table where id =2;
+select user_name from mysqltest. user_table where id=1;    
+SELECT user_name FROM mysqltest.user_table where id=3;
+SELECT user_name FROM mysqltest.user_table where user_name="raj";             
+select id from 
+
+
+eclipse prog:
+
+package org.mysql;
+
+import java.sql.*;
+
+public class Mysql {
+	public static void main(String[] args) throws SQLException {
+//		
+
+		String Url, UserName, UserPassword, Query;
+		Url = "Jdbc:Mysql://Localhost:3306";
+		UserName = "root";
+		String name = "ravi";
+		 String name1 = "raj";
+		UserPassword = "bala@123";
+		Query = "select * from mysqltest. user_table ";
+
+		Connection con = DriverManager.getConnection(Url, UserName, UserPassword);
+
+		Statement Statement = con.createStatement();
+		ResultSet Result = Statement.executeQuery(Query);
+		System.out.println("id  " + "username  " + "email");
+		
+		Result.next();// to my understanding it is row one time u call tis statement u ll have one row for another row u must call another result.notes.
+		System.out.println(name.equals(Result.getString(2) ));
+		Result.next();
+		System.out.println(name.equals(Result.getString(2) ));
+               // Result.next();//to my understanding it is row one time u call tis statement u ll have one row for another row u must call another result.notes.
+		//System.out.println(Result.getString(1)+" "+Result.getString(2)+" "+Result.getString(3));
+  // Result.next();//to my understanding it is row one time u call tis statement u ll have one row for another row u must call another result.notes.
+		//System.out.println(Result.getString(1)+" "+Result.getString(2)+" "+Result.getString(3));// inorder to avoid repatedly calling result.next() while loop is used
+//	while (Result.next()) {//
+////		
+//	System.out.println(Result.getString(1)+" "+Result.getString(2)+" "+Result.getString(3));
+////		
+//	}
+
+}
+//
+}

@@ -1,0 +1,207 @@
+Cucumber BDD : 
+
+	1. This is the advanced framework
+	2. BDD Framework (Behavioural Driven Development)
+	3. We can create our own test case based on the application's behaviour
+	     in plain english language (Gherkin) in the colourful format
+
+Cucumber Installation :
+
+	Install Natural plugin in EclipseMarketplace.
+
+
+
+Create a Maven Project for cucumber
+
+	1. Name it AdactinCucumber
+
+	2. src/main/java---> com.adactin.baseclass  
+				----> BaseClass
+				-- pom 
+
+	3. src/test/java---> create 3 packages.
+			1. com.adactin.feature
+			2. com.adactin.runner
+			3. com.adactin.stepdefinition
+			4.com.adactin.helper
+--> 
+Dependencies : 
+  	      info.cukes.MavenRepository
+
+	      cucumber -j unit (1.2.5)
+
+	      cucumber java  (1.2.5)
+
+	      cucumber core  (1.2.5)
+
+Three Important files In Cucumber :
+
+1. Feature File
+
+2. Step Defintion
+
+3. Test Runner 
+
+
+1. Feature File :
+Feature file contains TEST SCRIPTS - Using the plain english language ( GHERKIN ) 
+
+
+KeyWords : 
+
+	Feature:       Overall Functionality of the application
+	Scenario:      Particular Functionality for each module / what to be tested 
+	Scenatio Outline:  with examples _ Run the same scenario multipletimes with different set of values 
+	Given ---->  Pre-Condition	
+	When ----> Action
+	And ----> Addditional Action
+	Then -----> Validation / future
+	But ---> negative Purpose / negative validation
+
+2. StepDefintion : 
+	create one stepdefenition class 
+
+	
+3. Test Runner :
+
+@RunWith(Cucumber.class) ---> J-Unit
+
+@ CucumberOptions(features="path of the feature file",glue ="stepDefinition path ")
+
+*Cucumber With J-Unit :*
+4. StepDefenition:
+paste the snippets in the stepdefenition ( from the console ) 
+contains Snippets ->which is automatically generated from the runner class ( features/glue) 
+
+*********************************************************************************************
+
+
+Property File :  ( singleton design pattern ) 
+
+configuration.properties -> Configuration Reader-> File Reader Manager 
+	( private constructor, static method, non-static method ) 
+
+**********************************************************************************************
+Cucumber Options : 
+Features  : path of feature file
+glue : path of step definition
+monochrome :  if it's true -> it will remove special characters in console  and it gives in a readable format
+dryRun:  
+	  it will check the Feature file and step definition without actually running
+strict :  
+	it will check feature file and step definition during the actual running
+	true - >  it shows exception
+	false -> it doesnt Show any exception 
+tags :        to run a particular scenario
+More than one tag : tags = ("tagName1, tagName2")
+To neglect a one tag : tags = ("~tagName1")
+plugin : 
+	For html Report : {"html:Report/Cucumber_Report"}  // html:Folder/name
+	For Pretty Report : {"pretty"}   ----> it will print in console
+	For json Report : {"json:Report/Cucumber.json"}    //json:Folder/name
+	For Cucumber Extent Report : 	{"com.cucumber.listener.ExtentCucumberFormatter:Folder/File.html"}
+	For Cucumber Extent Report : 
+					vimalselvam - > cucumber-extentsreport (3.0.2)
+					aventstack-> extentreports ( 3.1.2)
+
+Add compiler plugin & surefire plugin from maven dependency
+
+Add cucumber-runner   1.0.8 dependency 
+
+ 
+
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+				<configuration>
+					<includes>**/RunnerClass.java</includes>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+
+
+**************************************************************************************************************
+POM of POM ( Page Object Manager ) 
+it will collect all the objects and with the help constructor and private variable . 
+//partial single ton 
+
+=====================================================================
+HOOKS :  ( StepDefenition ) 
+hooks are blocks of code which run before and after each scenario or steps 
+
+cucumber.api.java.After
+cucumber.api.java.Before
+
+Before Hooks : 
+After Hooks : 
+
+
+If @Before annotations given as more than one we give a order 
+
+@Before(order=0)
+@Before(order=1)
+
+If @After annotations given as more than one we give a order 
+
+
+@After(order=1)
+@After(order=0)
+
+************************************************************************************************************
+
+Background :  ( feature file ) 
+
+	Represent a collective list of pre conditions for all the scenario
+
+	It performs like a hooks 
+
+	We cannot give a post condition in Background 
+
+	One Background for One Feature File.
+
+************************************************************************************************************
+
+//Feature : scope of the project 
+// Scenario: What to be tested , Test Script 
+//Scenario Outline : same script will run multiple times with multiple values 
+
+//Runner Class
+Cucumber Options 
+	features: path of the feature file
+	glue : path of the step defenition 
+	plugin : to get the reports 
+	monochrome : display the console output in the readable format ( true ) 
+	dryRun : check if all the steps have the step defenition ( true ) ( this helps to generate the snippets ) 
+	strict :will fail the execution if there are undefined or pending steps 
+	tags : what scenario to be executed or not to be executed 
+		( @first )                                (~@first) ~tilt 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

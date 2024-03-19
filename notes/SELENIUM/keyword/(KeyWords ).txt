@@ -1,0 +1,57 @@
+Types Of KeyWords :
+
+         Static 
+
+         Final
+
+         Finally
+
+         Finalize
+
+         this
+
+         super
+
+
+
+Static :
+
+      It is A Keyword 
+
+      It can Be Used In Two Levels .
+
+		Method Level
+               Variable Level 
+
+      Once We Declare The Method As A Static And variable as a static 
+      Without Using The Object We Can Call The Static Method And Static variable.
+
+      We Cannot give Static In Class Level.
+
+Final :
+
+      final is a Keyword .
+      it Can be access in Three Levels.
+
+      1. Class
+      2. Method
+      3. Variable 
+
+     Final Class Cannot Be Inheritance.
+     Final Method Cannot Be overriden.
+     Final variable value Cannot Be Changed.
+
+
+this : 
+     (Child)Current Class Reference
+
+super : 
+     Parent class Reference
+
+Finally :
+
+     Finally Is A Block It Can Be Used In Exception handling.
+
+finalize : 
+     Finalize it is method . 
+     It removes the garbage values.

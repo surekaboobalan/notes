@@ -1,0 +1,174 @@
+Control Statement : 
+     The statement or code executed according to the condition
+
+Types:-
+1)Loop statements
+2)Decision making statement
+3) Jumping statement
+
+Looping statement :(repeated)
+         Loop  is used to execute a set of instruction or function repeatedly when some of the condition become true.
+           
+                
+Types:
+		for loop 
+
+		while loop
+
+		do-while loop
+
+                nested for loop:-
+
+==================================================================
+1)  for loop :
+************** 
+    for:-name of the loop 
+      for(initilization i=3 ; condition i<=0;iterationi++,i--){
+           Action
+              }
+syntax:-
+*********
+         initilization : -> Starting point
+
+             condition : end point
+
+             iteration :  increment  -> ++
+	                  decrement  -> --
+
+=========================================================================================
+
+2)  while loop :- 
+******************
+	Entry Level Condition Checking
+syntax:-                         int i=1;
+      while(condition)           i<=10
+      {
+       loop body                 sysout
+       increment or decrement      ++
+      } 
+=======================================================================================
+
+3)  do-while loop: 
+******************
+	Exit Level Condition Checking.
+syntax:-
+     do
+      {
+      loop body
+
+       increment or decrement
+      }
+      while(condition);
+
+=================================================================================
+4) nested for loop:-
+********************
+         A loop whithin a loop, an inner loop within the body of outer one
+syntax:-
+     for------>outer loop  ==>i--->row
+     {
+      for----->inner loop  ==>j---value
+       {
+         loop body----->print(i)
+       }
+         loop body----->println =>next line
+     }
+
+
+
+======================================================================================
+Selection Statement (or) condition statement :-
+ *******************************************
+1)if -->true
+      it should print if the condition is true.
+syntax:- 
+
+      	if (condition)
+          {
+	loop body
+          }
+=====================================================================================
+2)if else -->true or false
+        also check the conditon is true or false
+syntax:-
+        if (condition) 
+         {
+	loop body
+         } 
+        else {
+          loop body
+         }	
+===================================================================================
+3)if else if ladder -->
+       we have to give multiple number of else if block
+syntax:-
+	if (condition) {
+          loop body
+		}
+        else if (condition) {
+            loop body
+              }	
+        else if (condition) {
+            loop body
+              }	
+        else if (condition) {
+            loop body
+              }	
+         else {
+	   loop body
+              }
+========================================================================================
+4)Switch Case Statement:-
+     Switch Statement execute one statement from multiple condition
+     it is like if-else-if ladder statement
+
+		switch ( 1) {
+		case value:
+			statement 1;
+			break;
+		case value:
+			statement 2;
+			break;
+		case value:
+			statement 3;
+			break;
+                default:
+                       statement n;
+			break;
+			}
+
+===========================================================================================
+=   -> assign
+
+==  -> condition checking
+
+Logical Operators : 
+
+&& -> Both Conditions must be Satisfied  (Logical AND)--->true && true===>true
+
+|| -> either one condition   (logical OR )---->true || false====>true
+
+-------------------------------------------------------------------------------------------
+
+Jumping Statement : 
+
+
+break  -> it will exit from the loop
+
+
+continue -> it will skip the particular iteration
+
+.
+
+-----------------------------------------------------------------------------------------------
+
+Pre-Increment  ->
+
+		++ variableName    -> 1+(variableValue)
+
+
+Post-Increment  ->     
+                
+                variableName++    -> (variableValue)+1
+
+`	        In step it will add the value

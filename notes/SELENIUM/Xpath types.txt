@@ -1,0 +1,61 @@
+1. Xpath Using attribute name 
+
+//input[@name='firstname']
+
+2. Xpath using text
+
+//div[text()='First name']
+
+3. Xpath using contains and attribute 
+
+//input[contains(@name,'firstna')]
+
+4. Xpath using contains and text
+
+//div[contains(text(),'First n')]
+
+5. Xpath using index
+
+(//input[@type='text'])[1]
+
+6. xpath using following- sibling
+
+//div[text()='First name']//following-sibling::input
+
+
+
+
+
+TestNG link by  mohan  -  https://u.pcloud.link/publink/show?code=kZpL970ZWdIDf4EDGsQPOS8xJqNL0Sh3UaN7
+
+7. xpath using following
+
+//div[text()='First name']//following::input[@name='firstname']
+
+
+8.xpath  using preceding-sibling
+//input[@name='firstname']//preceding-sibling::div
+
+9.xpath  using preceding
+//input[@name='firstname']//preceding::div[text()='First name']
+
+10. xpath using child
+//div[contains(@class,'PlaceholderInput')]//child::div[text()='First name']
+
+11. xpath using parent
+
+//input[@name='firstname']//parent::div
+
+12 xpath using descendant
+
+//div[contains(@class,'PlaceholderInput')]//descendant::div[text()='First name']
+
+13 xpath using ancestor
+
+//div[text()='First name']//ancestor::div[contains(@class,'PlaceholderInput')]
+
+14. xpath using starts-with
+
+//button[starts-with(@attribute_name,'attribute_value')]  
+
+
