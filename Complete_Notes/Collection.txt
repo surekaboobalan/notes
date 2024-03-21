@@ -1,0 +1,400 @@
+
+Collection 
+
+	=> A group of object is called Collection .
+	=> it doesnt have any fix length and no memory wastage 
+	=> It will allow HeteroGenous Object (allow different datatypes)
+	=> collection is a Interface from java.util.package.
+
+Collection ---> Interface 
+Collections --> Class
+
+
+-------------------------------------------------------------**************************------------------------------------------------------------------------------
+
+Collection <E>  Or Collection<Wrapper Class>
+
+Wrapper  Class : 
+
+	it will wrap the primitive Datatypes  and covert into Class Object 
+
+		DataType		Wrapper Class 		Parent Class  
+
+
+		byte ------------>	Byte			   Object
+
+		short ----------->	Short			   Object 
+
+		int -------------->	Integer  			   Object
+		
+		long --------------->	Long 			   Object
+
+		float--------------->	Float			    Object 	
+
+		double------------->	Double			    Object 
+
+		char--------------->	Character			    Object
+
+		boolean----------->	Boolean 			     Object
+		
+		String------------>	String 			      Object 
+
+
+< > --> Generics 
+
+	=> Purpose : it will  protect the given datatype in inside generics 
+
+
+		(Data) Type Safety
+
+	generics allows only wrapper Class.
+
+
+eg : 
+
+
+	if we give integer it will  allow only Interger Values
+
+	If we give Boolean it will allow only True or False
+
+	But if we give Object it will allow all set of Data Type (Hetergenous Object )
+
+
+
+Types : 
+
+	=> List <E>
+
+	=> Set < E >
+	
+	=> Map< Key, Value> 
+
+
+=> List (Interface) 
+	
+	It is a interface 
+
+	It is a indexed Based 
+	
+	It allow duplicate values 
+
+	It allows more than one null values
+
+	we cannot create a object for List but with help of implemented Classes like 
+
+	ArrayList, LinkedList, and Vector and help of upcasting we can achieve 
+
+	It prints insertion Order
+
+	for Iteration purpose ---> we use for,foreach ,Iterator and ListIterator 
+
+
+Object Creation : 
+
+		List<Wrapper Class> refname = new ArrayList<WrapperClass>(); ///------> upcasting 
+
+List Methods
+--------------
+
+method				purpose					Return Type
+
+
+add(Object)			add the values in insertion order			-------------
+
+add(index, Object)			add the values in particular index			----------------
+
+
+size( )				it will return count 				int 
+
+				if we give size()-1---> index  
+
+indexOf(element)			it will fetch the element index 			int
+
+
+lastIndexOf(element )			it will fetch the last oocurence 			int 
+
+				element index 
+
+
+if we give unknown element in indeOf and lastIndex it will  throw -1.
+
+
+
+contains(elements) 			it will check element is present in list or not 		boolean 
+
+get(index)				it will return the value in  that particular index		( decalared in wrapper class)
+
+
+get (unknown index) 			it will throw IndexOutOfBoundsException At Run-Time  
+
+
+set(index, element ) 			it will replace the value for the specified position 	---------------
+
+isEmpty()				it will check the element is present in list or not 	boolean
+
+clear () 				it will clear all the elements present in list or not	----------
+				
+				and it will return the emptylist []	
+
+
+addAll(list)				it will add the two list and stored in single list 		--------------
+
+remove(index) 			it will remove the particular index 			----------
+
+removeAll(list)			it will compare two list  and remove the common values
+
+retainAll(list)			it will compare two list and retain the common values 
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ArrayList  : 
+
+
+	=> It is class 
+
+	=> it will allow duplicate values
+
+	=> it will allow more than one nullvalues.
+
+	=> ArrayList is Asychronized 
+
+			It support Multiple Thread , Fast processing but thread is unsafe 
+
+	=> Searching  and Retrieving is very easy 
+	
+	=> Insertion and Deletion is difficult 	
+
+
+	=> it allow HeteroGenous Object if we give Object in Wrapper Class 
+
+
+
+
+=> Linked list 
+
+
+	=> It is class 
+
+	=> it will allow duplicate values
+
+	=> it will allow more than one nullvalues.
+
+	=> Linked List  is Asychronized 
+	       It support Multiple Thread , Fast processing but thread is unsafe 
+
+	=> Searching  and Retrieving is difficult
+	
+	=> Insertion and Deletion is very easy  
+ 
+	=> it allow HeteroGenous Object if we give Object in Wrapper Class 
+			
+	
+Vector 
+-----------
+
+	=> It is legacy class since java 1.1 or java 1
+
+	=> It is Synchronzied one 
+
+	=> it doesnt support multithreading and thread will be safe and slow process
+
+
+
+--------------------------------------------------------------********************************------------------------------------------------------------------------------
+Set :
+
+	=> It is a Interface 
+
+	=> it is a value based
+
+	=> it does not allow duplicate values.
+
+	=> we cannot create a object for set but with the help of implemented class like Hashset , LinkedHashset and TreeSet and upcasting 
+
+	=> here we cannot use get(), indexOf() and lastIndexOf () methods beacuse set is value based 
+
+	=> Iterate by foreach and iterator 
+
+Hashset 
+
+	=> It is Class 
+
+	=> it prints in random order 
+
+	=> it does not allow dupliacte values and duplicate null values 		
+	
+	=> it will allow hetergenous object 		
+
+	=> harhset is a Asynchronized
+
+	
+
+LinkedHashSet	
+
+	=> it is class 
+
+	=> it prints in Insertion Order 
+
+	=> it does not allow duplicate value and duplicate null values 
+
+	=> it will  allow Heterogeneous Object 
+
+	
+Tree Set 
+
+	=> it is a class
+	
+	=> It prints in Ascending  Order  beacuse it implements from sortedSet 
+
+	=> it doesnot allow duplicate values and its does not allow even single null value 
+
+	=> it is asynchronized 
+
+	=> if we add null value in TreeSet ---> it will throw NullPointerException at Run-Time 
+
+	=> Treeset does not allow Heterogeneous Object only allow homogeneous Objects 
+
+	=> if we add hetergenous object in Treeset --> it will throw ClassCastException at Run-Time
+
+	
+-----------------------------------------------------------------------------**********************************---------------------------------------------------------------
+
+Map :
+
+	=> It is a interface it will separate  from java.util.collection 
+
+	=> but Map is present in java .util 
+	
+	=> Map is Value Based 
+
+	=> Map is a Key and value pair 
+
+		key + value  = One entry 
+
+	=> Key : 
+
+		it will allow duplicate values but fetch the override key 
+
+	=> value : 
+
+		it will allow duplicate values 
+	
+	with help of entryset() 	we will iterate Map 
+
+	we cant create  a object for map but with help of Implemented Classes like HashMap , LinkedHashMap , Tree Map  and HashTable with the help of 
+
+	upcasting we can create instance 
+
+
+Map<key, value>  refname = new HashMap<key, Value> ();
+
+
+
+
+methods  					usage						returntype
+
+
+
+put(key,value)				we will insert the key and value in Map 			-------
+
+size( )					it will return the number of entries 			int 
+
+					size( )-1 ----> Index 
+
+
+ContainsKey(key ) 				it will check the given key is present in Map or not		boolean 
+
+ContainsValue(value)				it will check the given Value is present in Map or not		boolean 
+
+
+isEmpty( )					it will check whether its empty or not 			boolean
+
+					
+
+clear( )					it will remove all the entries in map 			--------
+
+					and it will throw { } emptymap 
+
+	
+get(Key)					if we pass the key it will return value 			declared in wrapperClass value 
+
+					if we pass unknown key 
+
+						it will return  as null
+
+
+keySet( )					it will return all the keys present in map 			Set<Key WrapperClass>
+
+
+Values ()					it will return all the Values present in our map			Collection< value WrapperClass>
+
+
+entrySet( ) 					it will return all the entries 				Set<Entry <Key Wc, Value Wc>>
+
+
+
+
+HashMap : 
+
+	it is class 
+
+	it prints in random order 
+
+	key -->it will allow duplicate values and override null values
+
+	Value--> allow duplicate and allow null values 
+
+	Asysnchronzied  
+
+
+
+LinkedHash Map : 
+
+		it is a class 
+		
+		it prints in insertion order 
+
+		Key--> allow duplicate but override values and override null values 
+
+		value--> allow duplicate and allow null values
+
+		Asynchronized
+
+
+Treemap 
+
+		it is a class 
+
+		it prints in Ascending order beacuse its implements from Navigable , SortedMap 
+
+		Key --> allow duplicate but override values 
+			
+			it doesnt allow even Single null value 
+
+		value --> allow duplicate and allow null Values 
+
+		Asynchronized
+
+ 
+
+Hashtable : 
+
+		it is a class
+
+		it prints in random order 
+
+		Key ---> allow duplicate but override values and 
+
+			doesnt allow even single null values
+			
+		Value ---> allow duplicate but override values and 
+
+			doesnt allow even single null values 
+
+		Synchronized 
+
+		Inside HashTable Class we have a properties Class 
+

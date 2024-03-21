@@ -1,0 +1,33 @@
+ScreenShot :
+
+
+
+
+
+
+
+
+
+Commons IO Jar:
+
+		commons io apache jar download
+		extract in disk
+		add in eclipse
+
+		
+
+
+
+
+
+
+
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		// childclassname objname =  (childclassname) parentclassname;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		//type of the action to be stored
+		File des = new File("path of folder \\snap.png");
+		//path of the folder
+		FileUtils.copyFile(source, des);
+		//to copy from the source

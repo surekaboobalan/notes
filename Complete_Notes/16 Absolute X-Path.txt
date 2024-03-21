@@ -1,0 +1,71 @@
+Absolute XPath in Selenium
+---------------------------------
+
+
+	=>Absolute XPath refers to the path of the element starting from the root to the destination element.
+
+	=> While writing the absolute XPath, we use single forward slash (/) to traverse through each immediate child element in the html tree.
+
+Rules
+------> 
+
+	=> dot (.) refers to the current document or the current web page (Optional)
+
+	=> If there are multiple siblings with same tag name, then the index starts from 1. In case of multiple siblings with same tag name, 
+	=> if we don’t use index, then it considers ALL the siblings.
+
+---------------------------------------------------------------**************************----------------------------------*********************------------------------------------------
+
+Eg 1:-
+
+
+	<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+
+<a href="www.facebook.com">facebook</a>
+
+</body>
+
+</html>
+
+===> O/P-------> ./html/body/a  (or) /html/body/a
+
+------------------------------------------------------------------********************************************************------------------------------------------------------------------------
+Eg 2:-
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+
+<a href="www.facebook.com">facebook</a> </br>
+
+<a href="www.google.com">google</a>
+
+</body>
+
+</html>
+
+
+=> /html/body/a[2]
+==> O/P -----> /html/body/a[1]---> facebook
+
+	------> /html/body/a[2]---> google	
+
+-------------------------------------------------------********************************************---------------------------------------------------------------------------------
+
+
+
+
+
+
+	

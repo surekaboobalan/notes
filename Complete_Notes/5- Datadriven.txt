@@ -1,0 +1,194 @@
+                                        DATA DRIVEN
+
+-> It is a framework
+-> Brings the data inside the test script and executes
+-> Operations are performed in an external file like excel sheet
+
+ADVANTAGES:
+Dataset doesn't remain constant. It changes frequently. Thus, when we have script and data 
+separately, it is possible to change the set of data with/without very minor changes in the code.
+--------------------------------------------------------------------------------------------------
+TEST DATA:
+
+-> Excel file
+-> Test data
+-> csv
+-> Database (table)
+--------------------------------------------------------------------------------------------------
+Apache POI:
+
+POI: Poor Obfuscation Implementation is an API that collects java libraries and helps us to read,
+     write data in excel.
+
+API-> Application programming interface
+
+Read -> To read the data in excel.
+Write -> Flow of data into the excel.
+
+DEPENDENCIES AND VERSIONS:
+
+poi- 5.2.0
+poi-ooxml -5.2.0
+
+-------------------------------------------------------------------------------------------------
+WORKFLOW:
+
+   * Excel
+
+
+*  File Input Stream:
+ 
+ -> Flow of data from the source
+ -------------------------------------------------------------------------------------------
+* File Output Stream:
+
+ -> Flow of data into the destination
+-------------------------------------------------------------------------------------------  
+     * WorkBook (I)
+
+        HSSFWorkBook (C) -> Before MS-Office 2003
+        XSSFWorkBook (C) -> After 2007
+
+        * Sheet (I)
+
+          * Row (I)
+    
+           * Cell (I)
+
+             * CellType
+
+               * CellData
+
+                     String -> getStringCellValue()
+                     Numeric -> getNumericCellValue()
+------------------------------------------------------------------------------------------------
+WorkBook (Interface):
+
+ -> A WorkBook represents Microsoft Excel File.
+ -> Used for creating and maintaining the spreadsheets.
+ -> A WorkBook contains many sheets.
+
+TYPES:
+
+     -> HSSF WorkBook (C)-> used to read/write data to Microsoft Excel in .xls format
+                            MS Office version-97 2003
+                            HSSF -> Horrible Spreadsheet Format
+
+     -> XSSF WorkBook (C)-> used to read/write data to Microsoft Excel in .xls or .xlsx format
+                            MS Office version 2007 or later
+                            XSSF -> XML Spreadsheet Format
+
+    WorkBook w=new XSSFWorkBook();
+-----------------------------------------------------------------------------------------------
+Sheet (Interface) :
+
+  -> A sheet contains number of rows and columns.
+
+     For
+
+     Creating a sheet-> createSheet(name)
+
+     To get a sheet -> getSheet(name)
+                       getSheetAt(index)
+----------------------------------------------------------------------------------------------
+Row (Interface): 
+
+ -> A row represents the combination of cells, which is used to represent a row in sheet.
+
+     For 
+
+     Creating a row -> createRow(index)
+  
+     To get the row -> getRow(index)
+
+     get size -> getPhysicalNumberOfRows()
+---------------------------------------------------------------------------------------------
+Cell (Interface):
+
+  -> A cell is indicated by a row and column combination
+  -> Data can be of the type such as String, numeric value or data.
+
+     For
+
+     Creating a cell -> createCell(index)
+
+     get the cell -> getCell(index)
+
+     get Size -> getPhysicalNumberOfCells()
+
+     get type of cell -> getCellType()
+
+         String -> getStringCellValue()
+                   return type is String
+
+         Number -> getNumericCellValue()
+                   return type is Double
+-------------------------------------------------------------------------------------------
+
+Read Particular Data from Excel:
+
+-> Create a object for file and pass the parameter as .xlsx location
+-> Create a object for FileInputStream and pass the paramter as File.
+-> Create a object for WorkBook along with XSSF WorkBook and pass the parameter as fis.
+
+By using workbbook ref name:
+
+   getSheetAt(index) -> traverse into sheet
+
+   getSheet(name) -> traverse into sheet
+
+By using Sheet ref. name:
+
+   getRow(index) -> traverse into particular row
+
+By using Row ref. name:
+ 
+   getCell(index) -> traverse into particular cell
+
+Check the cellType by using
+
+          getCellType()
+
+          if(cellType.equals(CellType.STRING)){
+
+
+          }
+          String -> getStringCellValue()
+          numeric -> getNumericCellValue()
+                     double -> int
+---------------------------------------------------------------------------------------------------
+Write Particular Data From Excel:
+
+-> Create a object for file and pass the parameter as .xlsx location.
+-> Create a object for FileInputStream and pass the parameter as File.
+-> Create a object for WorkBook along with XSSF WorkBook and pass the parameter as fis.
+
+by using WorkBook ref name
+
+ wb.createsheet("Name").createRow(index).createCell(index).setCellValue(data);
+
+ wb.getSheet("Name").getRow(index).createCell(index).setCellValue(data);
+
+-> Create a object for FileOutputStream and pass the parameter as file.
+
+by using WorkBook ref name.
+
+    wb.write(fileoutputstream);
+------------------------------------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

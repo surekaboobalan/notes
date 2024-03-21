@@ -1,0 +1,259 @@
+Control Statements 
+		=> Iterative Statments 
+		=> Selection Statements 
+		=> Jumping  Statements 
+
+
+
+=> Iterative Statements 
+
+Loop :-
+	=> for
+	=> Nested for  
+	=> while loop 
+	=> do-while loop
+	=> foreach / enhanced for loop (Array)
+
+Syntax ;-
+For Loop 
+-----------
+
+for(initialization; condition ; iteration)
+{
+
+//inside the loop 
+
+}
+
+
+start ---> condition true ---> inside the loop body ---> iteration --->
+
+
+
+
+steps  : 
+
+	initialization
+	condition 
+		if its true ---> it will go to inside for loop and execute statements 
+			    iteration 
+		if its false ---> it will automatically exit from loop  
+
+
+Tasks :-
+
+task 1 :- 
+
+
+start 
+
+99 98 97 96 95 94 93 92 91 90
+
+end
+
+
+task 2 :-
+
+start 
+
+A  A  A
+
+end 
+
+
+task 3 :- 
+
+start 
+
+1
+
+start 
+
+2
+
+start 
+
+3
+
+End	
+
+
+Nested For Loop 
+-------------------> 
+
+		syntax:- 
+
+			for(initialisation; condition;iteration )//outer loop
+			     {
+
+				for (initialisation ; condition ;iteration)//inner loop
+
+				{
+
+					}
+
+
+
+					}
+
+
+=>> While -Loop 
+	=> it is a loop 
+	=> It is entry level condition Checking 
+
+Syntax: - 
+	initalization ;
+	while(condition) 
+	     {
+		implementation part; 
+		iteration;
+		} 
+
+=> do-while 
+	=>Its a Loop
+	=> It is exit level condition checking
+
+Syntax : 
+
+	initalization ;
+
+	do
+
+	{
+implementation ; 
+iteration ;
+	    }while(Condition)
+
+
+Task 1 ;- 
+print the numbers from 17 to 27 in for , while, do-while 
+
+Task 2- 
+Start 
+* * *
+End
+
+print output by using for, while and do -while 
+
+task 3 
+
+start 
+
+java  java  java java 
+
+End
+
+print output by using for, while and do -while
+
+-----------------------------------**************************************************------------------------------------------------------------------------------------
+
+=> Selection Statements / conditional  Statement  
+
+The java if statements  is used to test the condition..It checks boolean condition --> true or fasle .
+There are various types :- 
+
+	=> if Statement
+	=> if else statement 
+	=> if else if statemsnt
+	=> Nested if Statement
+	=>Switch
+Note ---
+
+	= --> assigining operator 
+	==  --> Condition/ checking operator 
+
+	for primitive datatype we must use == operator 
+	for non-primitive datatype we use == or .equals
+
+
+
+=> if statement 
+
+Syntax
+---------
+	if (condition){
+
+		} 
+
+
+=> if else statement 
+Syntax
+---------
+
+		if(condition ){
+
+			}else {
+
+			}
+
+			
+=>if -else if 
+
+Syntax
+----------
+		if (condition 1){
+
+			}elseif (condition 2) {
+
+
+			}else if (condition 3) {
+
+
+			}else {
+
+
+			}
+
+
+Nested if 
+
+Syntax 
+--------
+
+	if(condition){
+
+		if(condition){
+
+		}
+	}
+
+
+---------------------------------------------*****************************-------------------------------------------------------------------------------------------------------
+Task 
+
+Enter your Bill Amount 
+xxxxx
+Your Discount is 5% or 10%
+Your Discount amount :xxxxxx
+Balance Amount 
+yyyyyyyyy
+Thank You Sir Have a Nice Day.!!!!!!!
+
+--------------------------------------***********************************--------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=> Jumping Statement 
+	
+	=> break ----> it will exit from the loop 
+	=> continue ----> it will skip the particular iteration 
+
+
+

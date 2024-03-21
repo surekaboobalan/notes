@@ -1,0 +1,56 @@
+X - Path :
+
+	It is one of the locator
+
+	
+Types :
+
+	Absolute X - path ( / )
+
+	Relative X - path ( / / )
+
+	Dynamic X-Path 
+
+Relative X - Path :
+
+		It Starts with // ( Double forward slash )
+
+		It starts from the middle of the DOM or the given tagName.
+
+		
+
+
+Syntax :
+
+1. Attribute value and attribute name are present
+
+		//tagName[@attributeName = 'attribute value']
+
+
+2. If there is no attribute name and attribute value we use text() function
+		
+		//tagName[text()='text']
+
+3. If there is no attribute name and attribute value we use text() function
+     but that text() is more values means we use contains function
+
+		//tagName[contains(text(),'partial text')]
+
+4. Attribute value and attribute name present but attribute Value is bigger
+
+		//tagName[contains(@attributeName,'partial attribute value')]
+
+5. Its applicable for all the above scenarios 
+
+     it contains multiple webelements we pass the index at end
+
+		(//tagName[@attributename = 'attributevalue'])[index]
+
+
+X - Path Functions:
+
+		=> text()
+
+		=> contains
+
+		

@@ -1,0 +1,94 @@
+Maven
+-------
+
+--> Maven is a Build/Project Management Tool.
+--> To maintain proper structure.
+--> To manage dependencies.
+
+- It is used to build and manage projects written in Java, C#, Ruby
+- Maven helps developers to create Java Based Project more easily
+- Central repository to get all dependencies.
+- Maven has flexibity to integrate with CI tools like Jenkins.
+- Plugins for test framework execution (TestNG)
+- Maintains program efficiency.
+------------------------------------------------------------------------------
+TERMINOLOGIES:
+
+- GroupID: com
+- Artifact id: Project Name
+- Version: Version number
+- Archetype: Quickstart 1.1 or 1.4----> Group id is org.apache.maven.archetypes
+ 
+- Dependencies: external jars and libraries
+- Plugins- Compiler Plugins
+-------------------------------------------------------------------------------
+MAVEN PROJECT:
+
+File-> New-> Project-> Maven Project
+
+MAVEN PROJECT STRUCTURE:
+
+src/main/java: Actual code
+              - Base Class
+              - POM class (Page Object Model)
+
+src/test/java: Unit testing
+            Ex: Runner Class/ Frameworks
+
+Pom.xml
+-> Project object model
+-> Heart of the maven
+-> Has all dependencies
+-> Can have central control to build and run the script
+-> xml- Extendible Markup Language
+--------------------------------------------------------------------------------
+Where to get dependencies:
+mvn repository--Central Dependencies 
+
+Selenium- 3.141.59
+Commons.Io-2.8.0
+--------------------------------------------------------------------------------
+Maven Phases:
+
+-> LifeCycle
+-> Phases
+-> Goals
+-> Plugins
+--------------------------------------------------------------------------------
+LIFECYCLE OF MAVEN:
+
+validate -> Check if all info necessary for build is available
+
+compile -> Compile the source code
+
+test-compile -> Compile test source code
+
+Test -> Run unit tests
+
+package -> Package compiled sourced code into their distributable format (jar/war)
+
+integration test -> process and deploy the package if needed to run integration test.
+
+install -> install the package to the remote repository
+
+deploy -> copy the package to the remote repository
+------------------------------------------------------------------------------------------
+BASE CLASS
+
+-> A class with all the methods
+  - Properties class
+  - Reusable class
+  - Page object class
+  - Project source code
+
+Works on the concept of Hierarchial inheritance
+--------------------------------------------------------------------------------------------
+ADVANTAGES OF MAVEN:
+
+-> Increases readability
+-> Reduces complexity
+---------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,118 @@
+Variables:
+
+=> A Value can be stored in reference name depend upon datatype
+Syntax
+-------
+
+=>datatype refname(variable) =value;
+
+//-->Initialization
+
+//-->assigning operator 
+
+
+Types of Variables    (Depends upon location)-->Life Cycle --> intialization
+-----------------------
+
+=>Local Variable 
+=>Class or instance variable 
+=>Static Variable  
+=> Final or Constant variable
+
+
+
+
+
+
+
+
+=>Local Variable 
+Location==>*A variable declared inside the body of the method is called local variable
+Lifecycle==>* You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+Initialization==>*must be initialized
+variable value--> Easily changed
+ 
+
+
+
+
+
+
+
+=>Class Variable (Default Variable )
+Location==>inside the class and outside the method 
+Lifecycle ==>we can access anywhere in inside the class
+Initialization==>Initialization is not mandatory but if we not intilaized the default value of the given datatype which will be invoked.
+
+
+
+note : if we have same  referance name in local and class variable the priority goes to local variable for inside the method 
+	=> if we not initialize the data type in local variable that times it can changed into class variable 
+
+
+
+
+
+
+
+In main Method 
+	-> we invoke class varibale with help of objName.variablename;
+	->inside the print statement Syso(objName.variableName);
+	-> take return type (Ctrl+2,l)and assign the value in local variable 
+		=> datatype refname = objName.variableName
+		=>Syso(refname);
+
+--------------------------------------------***********************------------------------------------------------------------------ 
+
+Static Variable :(No need to create a object)
+
+Location : Inside the class and outside the method along with static keyword
+lifecycle : we can access anywhere in throughtout the class
+Initalization : 
+	->Initalization is not mandatory but if we not initialize the default value of the given datatype which will be invoke 
+
+
+variable value : cannot be easily   changed 
+
+Note :
+	=>if we have a same referance in local and static the priority goes to local variable 
+	=> if we try to invoke the static variable in main method 
+	=> No need to create a object
+	=>Local variable cannot be static 
+
+
+
+-----------------------------------------------------****************************------------------------------------------
+final variable or constant variable 
+
+Location: Inside class and inside the method along with final keyword 
+Lifecycle: throughout the class
+intialization --> Initalization is not mandatory but if we not initialize the default value of the given datatype which will be invoke
+Variable value--> cannot be changed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

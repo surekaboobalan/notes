@@ -1,0 +1,62 @@
+
+==>>>>WebDriver Methods :
+-------------------------------------
+
+
+
+Method                                                         Description                                                          		                             Return Type
+
+=> get(String)                                  if we pass the Url it will go to the particular Url				void
+
+
+window manage :
+
+driver.manage().window()
+
+			.maximize()  ---> it will maximize the window                                                                                 void
+
+			.fullscreen() ---> it will maximize the entire window                                                                        void
+
+			.getSize()    ---> it will return the dimensions                                                                                    Dimension
+
+			.setSize(Dimension)--->  it will customize the window                                                                     void 
+		
+
+
+
+=> navigate().to(String)                it will navigate to particular url in same webpage				     void	
+
+=> navigate().back()                     it will navigate to backward                                                             			      void
+
+=> navigate().forward()               it will navigate to forward                                                                                                                    void
+
+=> navigate().refresh()                 it will refresh the current webpage                                                                                                       void
+
+=>  getTitle()                                     it will return the Title of the current webPage                                                                                String
+
+=> getCurrentUrl()                         it will return the Url of the current webPage                                                                                   String
+
+=> getPageSource()                         it will return the view of PageSource                                                                                              String //task
+
+close()                                        it will close the current tab / window
+          		               current tab represent driver position webPage                                                                                      void   //task
+
+quit()                                         it will terminate the entire browser session connection                                                                          void  //task
+
+
+
+manage commands
+
+
+we can manage the cookies, window, timeouts and logs.
+
+
+=> cookies manage :
+
+driver.manage.deleteAllCookies() ; ------> it will clear all the cookies
+
+
+
+=> timeouts manage :
+	
+	Thread.sleep(3000);

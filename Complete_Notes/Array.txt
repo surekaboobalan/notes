@@ -1,0 +1,66 @@
+Array  ;
+----------
+	=> Storing a group of value in a single reference name
+	=> it allow a same set of datatypes (Homogeneous)
+
+Types : 
+-------
+	* Single Dimensional Array --->[ ] 
+	* Multi-Dimensional 	Array ----> [ ]  [ ]
+
+Declaration 1 : 
+--------------
+=> Syntax	
+-------------	
+	Datatype refName [ ] = new Datatype [ length];
+	length ---> starts from 1 to n 
+	index ---> startes  from 0 to length -1
+
+	value declaration : 
+
+	    	refname [index] = value; 
+
+ Declaration 2 
+----------------
+
+DataType  refName[ ] = { value1, value 2, value 3};
+
+
+Feature : - 
+-----------
+	=>Array is index-Based
+	=> It is fixed length 
+	=> if we not initialize the value the default value of given datatype  will be declared for that index 
+	=> if we assign the value for same index it will take the override value 
+	=> it has high memory wastage (Disadvantage)
+
+
+
+
+for each Loop 
+----------------
+
+
+
+=> It is Value Based 
+=> no need to give any condition 
+=> if its value present ---> it will go to inside loop 
+=> if value is not present ---> it will not go to the loop 
+=> No need to give any iteration 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

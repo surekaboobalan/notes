@@ -1,0 +1,145 @@
+
+String  : 
+
+	=> collection / or group of words / collection of character sequence enclosed within double quotes " "
+	=> String are stored in StringConstantPool (inside the Heap Memory)
+	=> it will come from java.lang.package 
+	=> it is a class parent in java.lang.package
+	=> String implements from Serializable , Comparable and CharSequence interface.
+	=> Default value of String is null
+	=> it is index based . 
+	=> It is Immutable Memory
+--------------------------------------------------******************--------------------------------------------------------------------*******
+String Declaration :
+By using new Keyword
+
+=> String refName  = new String ("data") ;
+
+-------> but we are not follow this way 
+
+By using literal 
+
+=> String refname= "data" 
+
+
+String is also known as Immutable String / Literal 
+---------------------------------------------------------------------------------------******************************--------------------------------------
+
+
+ 
+String Function  / String Manipulation : 
+
+
+=>  length() ---> it will return the length of the String		--> retrun type is int 
+	----> index = refName.length()-1
+
+
+=> .equal() ----> it will check the two Strings    		---> Return type is boolean 
+
+=> equalIgnoreCase() --->  it will check two Strings  but ignore case Sensitive 	-->return type is boolean 
+
+=> toUpperCase()----> it will convert a entire string into  upper case 		---> return type is String
+
+=> toLowerCase()---> it will convert a entire string into lower case 		---> return type is String 
+
+=> charAt(index)-----> if we pass index and it will return the particular character. -----> return type is char
+		if we  pass the -ve argument  or unknown  index it will throw 
+			StringIndexOutofBounds Exception at Run-Time.
+
+=> indexOf(char)-----> if we pass the character it will return the index 	-------> return type is int 
+		it will fetch the index of first occurency character 
+		
+		if we pass unknown character  it will return value as -1
+
+=>lastIndexOf(char) ----> if we pass the charcter it will search from last occurency ----> return type is  int 
+		      and it will return the index 
+			
+		      if we pass unknown character  it will return value as -1
+
+
+=> contains(character)--> it will check the character is present in our string   	--------> return type is boolean 
+
+=> startWith(string) -----> it will check the given prefix string is present or not -------------> return type is boolean//--> Task
+
+=> endWith(String) ----->  it will check the given suffix string is present or not -------------> return type is boolean//--> Task
+
+=> trim ()	-----------------> it will remove unwanted space from string 	-----------> return type is String
+
+=> replace(old char, new char) ----> replace the String 			----------> return type is String//-->Task
+
+=> replaceAll(old string ,new String)----->> replace the entire string		----------> return type is String//--> Task
+
+
+=> Concat(String) -------------> it will add/merge the two String 		------------>return type is String 
+
+=> substring(int index) ----------> it will fetch the string from this begin index 	-------------> return type is String
+
+=> subString(int begin, int end-1) -----> it will fetch the string from begin to end -1 ----------> return type is String
+
+
+
+=> isEmpty()		----> it will check the string is empty or not -----------------> return type is Boolean 
+
+Note
+------
+ =>     Once we declare value as null if we try to perform string function it will throw NullpointException at Run-Time 
+
+=> split()		---->  it will split the strings
+
+=> split(" ")	--->  it will split after every space 
+
+=> split ("")	---> it split each and every character include space  
+
+
+
+=> How do you replace a special character from String ("Mohan*Raj50@#")
+--------> s.replaceall("[^a-zA-Z0-9]",'''')
+
+ 	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

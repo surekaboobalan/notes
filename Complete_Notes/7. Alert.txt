@@ -1,0 +1,127 @@
+
+Alert :
+
+	It is a Interface
+
+	It is present in between the current browser and UI ( User Interface )
+
+	Alerts are mostly invoke in E-Commerce, Banking and Booking Applications
+
+	Alert is not present in HTML.
+
+	Alert is a non-inspect
+
+
+Alert will be invoke depends upon unexpected event and some expected event like permissions
+
+We can handle only JavaScript Alert
+
+
+JavaScript Alert :
+ 		
+		If we want to handle JavaScript Alert we must switch the driver position from current webpage to Alert.
+
+		Like this driver .switchTo().alert();
+
+	Types :
+
+		Simple Alert
+
+		Confirm Alert / Confirmation Alert
+
+		Prompt Alert
+
+		Sweet Alert / Modern Alert
+
+
+Alert Internal Structure:
+
+public interface Alert
+{
+
+	void accept();
+
+	void dismiss();
+
+	String getText();
+
+	void sendKeys(String refName);
+
+
+}
+
+
+
+
+
+Alert Methods :
+
+Methods								Description					ReturnType
+
+accept()								It will accept the alert				void
+
+dismiss()								It will dismiss the alert				void
+
+								in simple alert also we dismiss to
+								handle the alert
+
+getText()								it will retrieve the text from the alert			String
+
+sendKeys(String ref)						it will pass the data into the alert text box			void
+								mostly we used in promptAlert
+
+
+
+Simple Alert :
+
+		it displays some information or warning to the users
+
+		it displays a Single button along with text.
+
+		here we can use accept() and dismiss() to handle the alert.
+
+
+Diagram :
+
+
+
+
+Confirm Alert :
+
+		it dislpays a two buttons along with text
+
+		we can use accept() for ok button 
+
+		we can use dismiss() for cancel button
+
+
+Diagram:
+
+
+
+Prompt Alert :
+
+		it displays a two buttons along with text and textbox
+
+		we use sendkeys() for pass the data into textbox
+
+		we use accept() and dismiss() for accept the ok btn and dismiss the cancel button
+
+
+
+Sweet alert / Modern Alert :
+
+		we can easily inspect this alert
+
+		the accept and dismiss feature belongs to HTML so we easily inspect and 
+
+		handle by webelement methods -----> click().
+
+
+
+if there is no alert but we switch our driver position from webpage to alert
+					
+						it will throw NoAlertPresentException at run - time.
+
+
+

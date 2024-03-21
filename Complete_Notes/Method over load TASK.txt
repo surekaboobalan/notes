@@ -1,0 +1,14 @@
+CREATE ONE CLASS:
+
+Student Name:
+Student Age:
+Student Gender:
+Student address along with pincode:
+Student Fees:
+Student Father Name and his Initial :
+Student Bank Account Number:
+
+
+
+Method Name Must Be student_Info:
+Class Name :Student_Details

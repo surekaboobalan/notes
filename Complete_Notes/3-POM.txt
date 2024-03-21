@@ -1,0 +1,29 @@
+                                           POM
+
+-> POM- Page Object Model
+-> It is a Design Pattern, to create object like repository to store WebElements.
+-> In base class, methods are created. In POM class, elements are created. 
+----------------------------------------------------------------------------------
+ADVANTAGES OF POM:
+
+-> Duplication of code can be reduced.
+-> Script Maintainence.
+-> Reusability of code and elements.
+-> Increases readability.
+----------------------------------------------------------------------------------
+E-COMMERCE SITE
+
+LOGIN
+PRODUCT SEARCH
+ADD TO CART
+PERSONAL DETAILS
+PAYMENT PAGE
+ORDER CONFIRMATION
+---------------------------------------------------------------------------------
+STEPS TO IMPLEMENT POM:
+
+1. Declaring the elements as private.
+2. Generate getters.
+3. Initialize the elements using constructor.
+4. Create an instance for POM class and access the elements using methods (getters).
+--------------------------------------------------------------------------------

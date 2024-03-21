@@ -1,0 +1,79 @@
+Drop - Down :
+-----------------
+Depends upon the DOM structure 
+
+		=> HTML Dropdown     -----> tagName must be select
+
+		=> Bootstrap Dropdown ----> tagName will be any but not in select
+
+
+HTML Dropdown :
+
+		=> tagName  :  select
+
+Structure :
+
+	<select id = "dropdown" name = "" type = "">
+
+		<option value = "1" >1</option>
+
+		<option value = "2" >2</option>
+
+	</select>
+
+
+
+=> if we handle HTML Dropdown we must use Select Class
+
+
+=> Select is a class provided by Selenium that is used to work with a dropdown element.
+
+
+Syntax :
+
+	Select s = new Select(WebElement);
+
+Select Class Parent ------> ISelect ( Interface )
+
+Structure :
+
+	public class Select implements ISelect
+
+
+Methods					Description					ReturnType
+
+
+isMultiple()			it will check the dropdown is single or multiple
+
+				  if it is multiple ---> return true					boolean
+
+				  if it is single ------> return false
+
+
+getOptions() 			it will return all the options present in our element			List<WebElement>
+
+selectByIndex(int)                                   	it will select the option depends upon given index			void
+
+selectByValue(String)		                  it will select the option depends upon given value		                   void
+
+selectByVisibleText(String)		it will select the option depends upon given Text			void
+
+deselectByIndex(int)			it will deselect the option depends upon index			                   void
+
+deselectByValue(String)		it will deselect the option depends upon given value			void
+
+deselectByVisibleText(String)		it will deselect the option depends upon given Text			void
+
+deselectAll()			it will deselect the multiple options				void
+
+getAllSelectedOptions()		it will retrieve the selected options in dropdown			List<WebElement>
+
+getFirstSelectedOption()		it will retrieve the first selected option in dropdown	
+ 				it is applicable for single  dropdown				WebElement
+
+
+
+=> When the element is not a SELECT, UnexpectedTagNameException will throw
+
+
+

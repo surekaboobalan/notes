@@ -1,0 +1,66 @@
+WebTable :
+
+	Table is present the webpage is known as WebTable
+
+	table tagName : table
+
+	<table>
+
+	     <thead> : table head
+
+  	     <tbody> : table body
+
+	          <tr> : table row
+	
+	               <td> : table data
+
+
+
+we can read the data by
+
+		particular cell
+
+		row
+
+		column
+
+		all data
+
+
+
+
+
+
+
+	//particular cell
+		WebElement data  = driver.findElement(By.xpath("//table[@id='table02']/tbody/tr[2]/td[4]"));
+
+		System.out.println(data.getText());
+
+
+	//all data
+		List<WebElement> all_Column = driver.findElements(By.xpath("//table[@id='table02']/tbody/tr/td");
+
+		for(WebElement e : all_Column)
+		{
+
+		System.out.println(e.getText());
+		
+		}
+
+
+	//specific column
+		List<WebElement> alll = driver.findElements(By.xpath("//table[@id='table02']/tbody/tr/td[4]"));
+		for (WebElement webElement : alll) {
+			System.out.println(webElement.getText());
+		}
+
+		
+	//specific row
+		List<WebElement> al_Fi = driver.
+				findElements(By.xpath("//table[@id='table02']/tbody/tr[3]/td"));
+		for (WebElement webElement : al_Fi) {
+			System.out.println(webElement.getText());
+		}
+
+

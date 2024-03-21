@@ -1,0 +1,36 @@
+Method Overriding 
+
+=>If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java
+
+Rules for Java Method Overriding
+The method must have the same name as in the parent class
+The method must have the same parameter as in the parent class.
+
+=>METHOD OVERRIDEING / RUN-TIME POLYMORPHISM / DYNAMIC BINDING
+
+WE HAVE TWO CLASSES ONE IS PARENT AND ANOTHOR IS CHILD with extend keyword
+
+
+IF WE INVOKE THE SAME METHOD IN CHILD IT WILL INVOKE @OVERRIDE ANNOTATION 
+BY USING SUPER KEY WORD IT WILL HELPFUL TO INVOKE THE PARENT CLASS METHOD  DATA
+
+
+@OVERRIDE ANNOTATION-->IT Indicates that the child class method is over-writing its base class method
+
+// IT IS ALSO KNOWN AS RUN - TIME POLYMRPHISM / DYNAMIC BINDING
+
+
+
+
+
+
+Interview Question :-
+
+Can we override java main method?
+No,because its a static method 
+
+
+can we overload a java main method??
+ Yes, because parameter will be different 
+
+

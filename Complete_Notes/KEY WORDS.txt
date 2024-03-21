@@ -1,0 +1,56 @@
+KEY WORDS
+---------
+
+new :
+
+it is a keyword
+
+it allocates memory
+
+with the help of new keyword we will invoke the constuctor
+
+STATIC
+------
+
+it can be used in three levels:
+                      method
+                      variable
+                      and block
+once we declare the method /variable / block without creating the object 
+
+RETURN
+------
+
+IT IS A KEY WORD 
+
+IT WILL RETURN THE VALUE
+
+The return keyword finished the execution of a method, and can be used to return a without value or with a value   from a method.
+
+=>example to return integer value.
+
+
+
+EXTENDS
+-------
+
+IMPLEMENTS
+----------
+
+SUPER ---> super class key word
+-----
+
+THIS ---> current class key word
+----
+
+
+FINAL----->>>>it is a Keyword 
+it can be used in 3 levels : 
+
+		--> Class --> cannot be inheritance 
+		--> method --> cannot be override
+		--> variable ---> Value cant be changed 
+
+
+VOID
+---- ----> NO RETURN TYPE

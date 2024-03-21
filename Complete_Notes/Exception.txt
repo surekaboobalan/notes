@@ -1,0 +1,135 @@
+EXCEPTIONS
+-----------------
+
+
+
+				Throwable 
+
+
+
+		Exception				Error
+						----------
+
+CompileTime or Checked Exception 			OutofMemoryError		
+-------------------------------------------
+
+=> IOException					StackOverFlowError
+
+=> ClassNotFoundException				Virtual Machine Error
+
+=>File not Found 					Network Error
+
+=> Awt Exception
+
+RunTime Exception 
+-------------------------
+
+=> Arthimetic Exception 
+
+=> Null Pointer Exception 
+
+=> Number format Exception 
+
+=>IndexOutOfBound Exception 
+
+	* ArrayIndexOutofException
+
+	* StringIndexOutofException 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AWT--> Abstract Window Tool Kit
+
+* Public class file not found exception extends IOException
+
+* Public class IOException extends Exception
+
+* Public class interrupted exception extends Exception
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Compile-Time or checked Exception
+---------------------------------
+
+With the help of throws keyword we can easily handle compile time or Checked Exception.
+
+
+Run-time or Uncheckd Exception
+------------------------------
+The classes that inherit the RuntimeException are known as unchecked exceptions.
+
+  -try catch
+  
+  - try multiple catch
+
+  -try finally
+
+ -try catch finally
+
+with the help of try catch block we can easily  handle runtime or unchecked exception
+
+
+try
+---
+
+* it is a block
+
+* it will try to excecute the code in inside the try block
+
+* if it throw exception ---------> it will go to catch block
+
+* it is executes without exception
+
+
+catch
+-----
+
+* it is a block
+
+*it will catch the exception it will occur in our try block
+
+
+*catch block must be parameterized belongs to child  class exception or Exception
+
+*we can give a multiple catch block / overload the catch block
+
+*IT WILL THROW THE EXCEPTION WITH THE HELP OF PRINT STACKTRACE() ---> TRACE THE EXCEPTION AND PRINT IN THE CONSOLE  
+
+FINALLY
+-------
+
+*  it is a block 
+
+ whether exception is occur or not in try block it will automatically execute our final block
+
+
+*Java finally block is a block used to execute important code such as closing the connection, etc.
+
+
+EXCEPTION
+----------
+
+* PROGRAMME WILL BE TERMINATE AT THE LINE ITSELF
+
+
+
+*Print Stack Trace() ----> it involve the error output stream
+
+
+
+            throw                                   throws
+           ------                                    -----
+
+  
+       *it is a keyword                         *it is a keyword
+       
+     *inside the method                         *In the method level  
+
+     *throw the exception                      *declare the exception
+     
+     * it will throw only one exception       * it will handle compile time exception
+
+
+
+

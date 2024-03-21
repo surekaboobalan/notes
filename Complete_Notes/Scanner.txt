@@ -1,0 +1,35 @@
+System.out.println("A");
+System.out.Print("B");
+System.out.print();
+Note:- We must something to write inside a  print statement otherwise it throw error only in print not println
+Because println is used for move the cursor to the next line in console 
+
+Scanner :
+	It is a class
+	It is present in java.util package.
+	It will read the data from user at run-time or console 
+
+Syntax ---> 
+	Scanner refName = new Scanner(System.in);
+	where 
+	       
+		Scanner---> class 
+		System --> Final  class
+		out ---> output stream 
+		in---> input stream 
+
+		sc.close
+
+
+
+
+
+
+
+String --> 
+
+	* next() :-   it will read data from console upto space after the space it will not read
+		Cursor will stay in the same line
+
+	* nextLine():- 
+		it will read data from console after the spaces also it will read 		

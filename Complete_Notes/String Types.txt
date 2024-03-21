@@ -1,0 +1,152 @@
+String :
+ 		    		    JVM 
+
+	
+			stack 		          	  Heap 
+
+			static memory 		dynamic memory allocation 
+
+			follow LIFO order
+
+=> LIFO --> Last In First Out ---
+			Variables and Array 		String , String Buffer , StringBuilder and Object 
+						
+						String are stored in inside heap memory that location 	
+						is called as StringConstantPool
+
+
+			JVM will throw 		JVM will throw OutofMemoryError	
+			stackOverFlowError 
+
+------------------------------------------------------********************************-----------------------------------------------------------
+How do you identify the memory reference  ? 
+=> System.identifyHashCode(refName);
+
+	---> Inside Print statement 
+	---> return type
+
+----------------------------------------------**********************************----------------------------------------------------------------
+
+
+
+
+
+
+
+String Types
+---------------
+
+
+		String 				StringBuffer 				StringBuilder
+
+
+
+Types 		immutable / literal			mutable / non-literal				Mutable / non-literal 
+
+
+
+reverse 		we cant reverse literal 			we can easily reverse 				we can easily reverse 
+		string by built in functionality 		by using reverse()				by using reverse()
+
+
+
+Duplicate 		if we give duplicate values 		if we give duplicate values			if we give duplicate values
+		memory will be shared 		memory will be newly created			memory will be newly created  
+						bcz were using new keyword 			bcz were using new keyword 	
+						
+
+concat/		if we perform concat the 		if we perform append  the 			if we perform append  the
+append 		memory will be newely created		memory will be shared 			memory will be shared 
+		
+						
+		we cant append String only		we cant  concat or + 				we cant  concat or +	 
+		perform concat or +			String buffer only perform 			String buffer only perform 
+						append					append
+	
+
+Memory 		inside the heap memory 		in the heap memory 				in the heap memory 
+		(String Constant Pool)			
+
+
+						Synchronized 				ASynchronized
+						one by one process (slow)			fast Process						
+						it doesnt allow multiple threads 			it support multiple threads 
+						Thread is safe 				Thread is unsafe
+
+
+--------------------------------------------------------------************************************************************---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Buffer Methods : 
+
+append 			it will append the two strings and share the same memory 			StringBuffer 
+
+
+
+insert(index,words) 		it will insert the value for the given index 				StringBuffer 
+
+
+replace(startingindex, endindex-1, 	"words") 	
+			replace the words inbetween the index 				StringBuffer  
+
+
+delete (Startindex,endindex-1) 
+			delete the words inbetween the indexes 				StringBuffer 		
+
+
+reverse()			it will reverse the String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

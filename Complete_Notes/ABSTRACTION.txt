@@ -1,0 +1,95 @@
+
+
+ABSTRACTION:
+------------
+       Hiding the Implementation part.
+
+Types
+-----
+
+    *  Partial Abstraction(Abstract Class)
+    *  Fully Abstraction (Interface)
+
+1 Partial Abstract method
+-------------------------
+	* we can use public abstract keyword in class level and method level.    
+      
+    * it supports abstract method and also non- abstract method
+ 
+    * Abstract method dont have a method body and implementation part its contain only signature part
+    
+     *we use extends keyword to inherit the property from Abstract Class
+
+     *Abstract Method Must be Overriden 
+
+NOTE:
+
+   
+   * if we try to override the abstract method super keyword doesnot work .
+      * we cannot create a object for abstract class.     
+    *  WE cannot create object for abstract class but with the  help of upcasting 
+    WE CALL ONLY PARENT CLASS OWN METHOD AND  OVERRIDED METHOD
+
+       but it will not invoke child class own method
+
+     * we will create a instance for AbstractClass and invoke parent Class method and overridemethod
+
+      
+     * Abstract Method must be overriden.
+
+
+
+     
+
+
+Interface
+---------    ==> fully Abstraction
+
+In interface contains only abstract method
+
+Abstract method doesnot contain method body and implementation part but it allows signature part
+
+* public abstract key word is default in class level and method level .
+
+* we must use implements key word to access the method from interface
+
+     * Abstract Method must be overriden.
+* if we try to override the abstract method super keyword doesnot work, because there is no implementation part in parent class
+
+* we canot create a object for interface which is overcome by "upcasting"
+
+* we can create a instance and call the override method
+
+* but it will not invoke child class own method
+
+
+
+Multiple Inheritance
+---------------------
+
+parent_A(interface) 						parent_B(Interface) 
+
+			Child implements parent_A, parent_B 
+
+
+we can easily achieve multiple inheritance by using interface
+
+
+
+
+
+
+
+
+Interview Question 
+
+
+why we are going for interface ??
+  because we have to achieve the multiple inheritance in java
+
+
+
+
+
+
+

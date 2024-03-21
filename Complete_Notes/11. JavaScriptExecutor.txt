@@ -1,0 +1,57 @@
+JavaScriptExecutor :
+-------------------------
+		It is an Interface.
+
+		It will perform some actions like
+
+					=> click
+
+					=> sendkeys
+
+					=> scroll the page
+
+					=> Highlight a WebElement
+
+			Sometimes Selenium operations doesn't work for some Elements
+
+			At that time we inject a JavaScriptExecutor Interface
+
+
+
+Syntax :
+---------
+
+JavaScriptExecutor js = (JavaScriptExecutor) WebDriver refName ;DownCasting
+
+
+
+Types Of JavaScriptExecutor
+-------------------------------------
+
+
+=> JavaScriptExecutor provides two types of methods that can handle any type of interaction using JavaScript in Selenium.												
+
+	=> ExecuteScript()
+
+	=> ExecuteAsyncScript()
+
+
+Actions
+------------
+
+
+
+=> To scroll the page vertically for 500 px:
+
+                                 js.executeScript(“window.scrollBy(0,500)”);
+
+
+
+
+
+
+
+
+
+
+

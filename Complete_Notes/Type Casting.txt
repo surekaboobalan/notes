@@ -1,0 +1,68 @@
+TYPE CASTING
+------------
+
+IT CONVERTS ONE DATA TYPES TO ANOTHER DATA TYPES
+
+TYPES
+-----
+	
+*WIDENING(Lower to higher)  
+
+*NARROWING(higher to lower) 
+
+
+
+WIDENING
+--------
+
+FROM LOWER DATA TYPES TO HIGHER DATA TYPES.
+
+
+NARROWING
+---------
+
+FROM HIGHER DATA TYPES TO LOWER DATA TYPES.
+
+Complie -Time Error
+
+add to cast 
+
+CLASS CASTING/OBJECT CASTING
+-----------------------------
+
+* UPCASTING
+* DOWN CASTING
+
+
+UPCASTING
+---------
+
+ * ACCESSING CHILD  CLASS  OVERRIDE METHOD IN PARENT CLASS WITH THE  HELP OF
+
+Syntax:
+
+ PARENTCLASS NAME OBJECT NAME = NEW CHILDCLASS NAME ();
+
+ * IT WILL RESTICT TO INVOKE CHILD CLASS OWN METHOD
+
+ * WE WILL INVOKE EASILY OVERRIDE METHOD
+*Super keyword should not be use 
+
+
+DOWNCASTING
+-----------
+
+ * ACCSESSING PARENT CLASS PROPERTY INTO CHILD CLASS WITH THE HELP OF
+     
+       CHILDCLASSNAME   OBJECTNAME = NEW  PARENTCLASS NAME();//------> trying downcast
+
+     (add to cast)
+ * CHILDCLASSNAME  OBJECTNAME = (child class name )  NEW PARENTCLASSNAME ();
+
+
+ * if we try to invoke the parent class method with the help of downcasting.
+
+ * it throw class cast exception at run - time
+
+ * so downcasting process is not possible in java .
+

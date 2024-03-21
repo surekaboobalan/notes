@@ -1,0 +1,47 @@
+Actions :
+
+	It is a Class.
+
+	It will perform mouse and Keyboard actions.
+
+
+
+Syntax:
+
+Actions a = new Actions(WebDriverRefName);
+
+
+
+Mouse Actions :
+
+		click()  ------> it will perform click in the current element location
+
+		click(WebElement) ------> it will perform click in target webelement
+
+		contextClick() --------> it will  perform right click in current element location
+
+		contextClick(WebElement) ---> it will perform right click in target webelement
+
+		doubleClick() -------> it will perform double click in current element
+
+		doubleClick(WebElement) -------> it will perform double click in target WebElement 
+
+		clickAndHold() ------> it will click the target and hold the mouse
+
+		moveToElement() -------> it will move the driver position to the particular element in same HTML
+
+		dragAndDrop(source,target) ----> it will drag one WebElement and drop into another location
+
+		release() ------>	
+
+		
+
+				
+		
+for every mouse actions
+
+		we must give build() and perform()
+
+		build() ---> it will ready to perform the given action
+
+		perform() ---> it will perform the particular action.

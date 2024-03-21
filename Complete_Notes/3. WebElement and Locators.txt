@@ -1,0 +1,141 @@
+
+WebElement :( Interface )
+
+		A element is present in the webpage is called WebElement
+
+		Which mean its present in DOM ( Document Object Model ) structure
+
+DOM :
+
+	Create by developers
+
+	its starts with html
+
+
+Structure :
+
+<html>
+
+	<head>    </head>
+
+	<body>
+
+		<tagName attributeName = "attributeValue" text />
+
+		<tagName attributeName = "attributeValue" attributeName = "attributeValue">
+
+		</tagName>
+
+   </body>
+
+ </html>
+
+
+tagName -----> pink colour
+
+attributeName ----> Orange colour
+
+attributeValue -----> Blue colour
+
+text -----> Black colour
+
+
+
+with the help of findElement -----> we can interact with single element 
+
+	      findElements -----> more than one element 
+
+
+
+we can use locators to identify the elements 
+
+Locators are present in By ( Abstract Class )
+
+
+Types :
+
+	=> By id
+
+	=> By className
+
+	=> By tagName
+
+	=> By name
+
+	=> linkText
+
+	=> partialLinkText
+	
+	=> css selector / locator
+
+	=> By xpath
+	
+
+
+WebElement Architecture :
+
+                                                                                                                Search Context
+
+					               TakeScreenShot
+
+					               WebElement
+
+
+public interface Webelement extends TakeScreenShot , SearchContext
+
+WebElement refName = ----------;
+
+refName.
+
+	WebElement Methods ------->
+
+	TakeScreenShot Method ------> getScreenshotAs()
+
+	Search Context Method ------ findElement , findElements
+
+
+
+
+
+
+
+
+
+
+
+
+WebElement Methods :
+
+
+Methods                                                                                                             Description                                                                                                 Return Type
+
+
+=> click()                                                                                   it will click the webelement					                   void
+
+=> sendKeys()                              			   it will pass the data into the particular text box        		                                         void
+
+=> clear()                    				 it will clear the data in the textbox                                                                   		  void
+
+
+=> getText()                                                	                 	 it will return the text of the webelement                   	                             		   String      
+
+=> isDisplayed()				  it will check the webelement is present in the UI or not                        	                     boolean
+
+=>isEnabled()                                                                                          it will check the element is enable or not                                                                      boolean
+
+=>isSelected()                                                                                          it will check the element is selected or not                                                                    boolean
+
+
+=> getAttribute("attributeName")				if we pass the attribute name as present in particular tagName
+						and it returns attributeValue			                                       String   
+
+
+
+=> getTagName()                                              			it will return the tagName of the particular webelement		          String
+
+=> getLocation()					it will return the location of the given webelement		          Point
+
+=> getSize()						it will return the width and height of the given webelement         Dimension
+
+=> getCssValue()					it will retrive the text font size, background colour border, radius     	          String
+

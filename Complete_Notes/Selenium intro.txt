@@ -1,0 +1,204 @@
+
+Selenium : 
+
+	*Selenium is a free and open-source test automation suite used for automating web-based applications. 
+	
+	*It supports automation across different browsers, platforms, and programming languages.
+
+	* It is a automation testing tool
+
+	* It depends upon programming languages like C, C++, Java and Python and so on.
+
+	* with the help of programming language we interact the web applications only.
+
+	* It is open source
+
+	* previous : QTP (Quick Test Professional) and Mercury.
+
+
+In web applications we mostly involved in Functional Testing, UI Automation Testing
+
+	
+	
+
+Selenium Components / Selenium Suites :
+
+	* Selenium IDE
+
+	* Selenium RC (Remote Control)
+
+	* Selenium WebDriver
+
+	* Selenium Grid
+
+Selenium IDE :
+
+	=> Selenium IDE is a record and playback automation tool using which we can automate the web applications
+	
+	=> It comes in the form of a Chrome and Firefox browser extension.
+
+	=> the first choice automation tool for people with no or limited programming language experience
+
+Selenium RC :
+	=>Selenium Remote Control(RC) is officially deprecated by Selenium
+	
+	=> Because ,it will not directly interact with our browser
+	
+	=> before executing the test scripts the server was required to be started.
+
+	=>It used to inject the javascript code in the browser for automation and required an additional server for running the automation scripts.
+
+	=> IDE ---------> Selenium RC -----------> WebBrowser
+
+	=> In RC installation are complicated
+
+	=> It Support JavaScript only
+
+
+Selenium WebDriver :
+
+	It will directly interact with our browser
+
+	It supports different browsers and along with different programming languages
+
+	It provides different drivers for different browsers and supports multiple programming languages.
+
+	It is purely object-oriented and supports all the major browsers – Chrome, Firefox, IE, Safari, etc and 
+
+	scripting can be done in most of the popular languages – Java, Python, Ruby, etc. 
+    
+                  IT CANT SUPPORT MULTITHREADING.
+
+                  old    version    3.141.59
+
+
+Selenium Grid :
+---------------
+
+	It supports Multi-Threading
+
+	it will support multiple test cases at a same time with the help of HubNode Concept 
+
+	These nodes are connected to a central hub which acts as a server and controls the whole test execution.
+
+
+
+Limitations :
+	
+	*Selenium does not provide desktop application automation support.	
+
+	* Automate Only web applications not other based applications like mobile applications (APPIUM)TOOL
+
+	* We cannot read the Captcha and we cant submit the OTP
+	
+	* Selenium WebDriver requires programming language requirements for script creation.
+
+	* Sometime the Elements methods not working in some elements
+
+	* We cant perform scrollup and scroll down operations but with the 
+
+	help of JavaScriptExecutor interface we can perform that actions .
+
+	* We cant generate the reports
+
+	
+-----------------------------------------------------------------**************************-------------------------------------------****************************-----
+
+
+Browser Lanuch 
+---------------------> 
+
+
+BROWSERNAME	             CLASS NAME         	          	KEY                       			 VALUE ( .exe file)
+
+*chrome		                ChromeDriver            	 webdriver.chrome.driver(small Letter)        		 chromedriver.exe
+
+*Edge		                 EdgeDriver             	  webdriver.edge.driver (small)           		 EdgeDriver.exe
+
+*FireFox		              FireFoxDriver           	 webdriver.gecko.driver  (small)         		 geckodriver.exe
+
+
+
+if we use selenium 3 JSON Wire Protocol 
+
+		it will check my real browser version along with .exe file version
+
+		both versions are same -----> it will create the session
+
+		versions are mismatch -----> it will throw SessionNotCreatedException at Run-Time
+
+
+
+if we use selenium 4 W3C Protocol
+
+W3C : World Wide Web Consortium
+
+JSON : JavaScript Object Notation
+
+
+	
+
+Downloads : 
+
+	Selenium 4 download
+
+	Location  in c or d and extract the jar file
+
+
+
+How to add the selenium jar in our project	:
+
+	Right click on your Project -----> configure Build path ----> choose libraries -----> Add external jar
+ 	-----> choose location  -> Apply and close.
+
+
+
+How to add the Chrome Driver in our project :
+
+	Right click on your Project -----> New -----> Folder ------> Folder name as ( Driver ) ------> copy the Chrome Driver
+	-----> Paste it on Driver Folder
+
+
+
+
+
+
+
+
+first syntax(Old one)
+-------------
+
+// System.setproperty(key , exe.file link)
+
+System
+
+//SYNTAX
+--------
+
+WebDriver   ref = new    ChromeDriver();
+(interface)              (class)
+
+WebDriver---> Interface----> org.openqa.selenium.WebDriver(package).
+
+ChromeDriver--> Class --->org.openqa.selenium.WebDriver(package).
+
+
+-----------------------------------------***********************-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

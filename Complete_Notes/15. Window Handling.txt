@@ -1,0 +1,35 @@
+Window Handling :
+
+		Single Window
+
+		Multiple Window
+
+
+with the help of  getWindowHandle() and getWindowHandles() and
+
+switchTo() ---> switch our driver position
+
+
+
+
+getWindowHandle()								getWindowHandles()
+
+return current tab / window id							return all the opening tab / window id
+									including parent
+
+
+Return type : String 								Return Type : Set<String>
+
+									Each id has own unique value
+
+
+
+
+
+
+
+
+
+
+
+

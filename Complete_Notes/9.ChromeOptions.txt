@@ -1,0 +1,114 @@
+ChromeOptions :
+
+
+
+		it is a class
+
+		it will customized by browser session and modify multiple properties of ChromeDriver
+
+		like open in incognito mode and handle the permission based popup
+
+
+Syntax :
+
+	ChromeOptions options =  new ChromeOptions();
+
+	options.addArguments("");
+
+
+	WebDriver driver = new ChromeDriver(options);
+
+
+
+for handle the notification :
+
+		options.addArguments("disable-notifications");
+
+
+for incognito mode :
+
+		options.addArguments("incognito");
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Remote WebDriver
+-----------------------
+
+=> It is a class which implements a Webdriver interface.
+
+=> It has some extra methods which are used for the implementation of the class.
+
+=> In this, the object is used to manage browser which is present in the grid.
+
+=> Remote Webdriver is a part of Webdriver.
+
+=> It provides method like getbrowserName , getBrowserVersion .
+
+
+
+
+
+
+
+---------------------------------------------********************************************************************-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

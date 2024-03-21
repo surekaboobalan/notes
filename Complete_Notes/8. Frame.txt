@@ -1,0 +1,57 @@
+Frames:
+
+	Frame contains a separate Html Structure in inside the HTML WebPage
+
+	tagName : frame / iframe
+
+
+
+
+How we handle Frame:
+
+	driver.switchTo().frame();
+
+
+By index :
+
+	driver.switchTo().frame(int index);
+
+
+
+By Id / Name :
+
+	driver.switchTo().frame(String Id)
+
+				id -----> represents id attribute value
+
+	driver.switchTo().frame(String name)
+
+				name -> represents name attribute value
+
+
+By WebElement :
+
+	driver.switchTo().frame(WebElement element)
+
+				          element --->
+
+
+we use overloading concept here :
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+driver.switchTo().defaultContent();
+
+			it will redirect or switch the driver position from any frame into our own page HTML
+
+
+Inner Frame or Multiple Frame :
+
+			diagam---
+
+driver.switchTo().parentFrame();
+
+			it will redirect or switch the driver position from child frame into parent frame			
+
+

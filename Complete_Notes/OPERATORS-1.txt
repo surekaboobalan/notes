@@ -1,0 +1,86 @@
+ OPERATORS
+ ---------
+
+  OPERATOR ARE SPECIFIC SYMBOLS THAT PERFORM SPECIFIC OPERATION
+
+  TYPES
+----
+  * ARITHMETIC
+  *Unary ---------------> (* postfix,prefix) 
+  *LOGICAL
+  *RELATIONAL OR COMPARSION 
+  *STRING
+
+  ARITHMETIC
+----------
+
+  * Arithmetic operators are uesd in mathematical expression in the same way that they are used in
+  algebra
+
+  * following are the types of arithmetic operator
+
+   +  --> addition
+   -  -->subraction
+   *  -->multiplication
+   /  -->division (returns our queation value)
+   %  -->modules (returns reminder value)
+
+   UNARY OPERATOR
+---------------
+
+   ++ --> increment  (a++--->(a+1=) Postfix,  ++a ---> prefix)
+   --   --> decrement
+
+MODULE OPERATOR
+---------------
+
+* the module operator "%" returns the reminder of division operation.
+
+* it can be applied to both floating point types and integer types.
+
+
+
+
+RELATIONAL OR COMPARITIONAL OPERATORS
+-------------------------------------
+
+* THE RELATIONAL OPERATORS DETERMINE THE RELATION ONE OPERATOR HAS TO OTHERS
+* IT ALSO GIVE BOOLEAN RESULT
+
+1) == EQUAL           EG: 5==9 --> its throug false
+2) != not equal       EG: 6!=4 --> its through true
+3) <  less than       EG: 3<2  --> its through false
+4) <= less than or equal EG: 5<= 5 --> its through true
+5) > greater than        EG: 4>3 --> its through true
+6) >= greater than or equal  EG: 5>=5 --> its shows true
+
+
+
+
+LOGICAL OPERATORS
+------------------
+  
+*LOGICAL OPERATORS GIVE BOOLEAN RESULT
+
+
+  && = logical "and" evaluates to true , when both operators are true---> 
+(AND)
+    @ it will show true when both the values are true
+
+
+ || =  logical "or" evaluates to true , when either one operand is true
+(OR)
+
+
+ !=  SSlogical  "not" evaluates to true if the operand is false
+(Not)
+
+
+
+String Operator
+---------------
+
+its joins two strings ---> Concatenation
+
+eg: "A" + "BC" + 10 +10= ABC1010
+
